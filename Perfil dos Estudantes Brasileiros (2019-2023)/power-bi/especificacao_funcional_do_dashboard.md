@@ -1,351 +1,409 @@
 # 📊 Storytelling Analítico do Dashboard
 
-# Painel Estratégico da Educação Brasileira (2019--2023)
+# Painel Estratégico da Educação Brasileira (2015–2024)
 
 ## Objetivo Geral
 
-Este documento descreve a proposta funcional do dashboard desenvolvido
-em Power BI a partir da base analítica construída em SQL no Google
-BigQuery. O objetivo é orientar o desenvolvimento do painel, definindo
-quais perguntas de negócio cada página responderá, quais KPIs serão
-apresentados, quais visualizações serão utilizadas e quais decisões
-poderão ser apoiadas.
+Este documento apresenta a especificação funcional do dashboard desenvolvido em Power BI a partir da base analítica construída em SQL no Google BigQuery utilizando dados públicos do INEP disponibilizados pela Base dos Dados.
 
-------------------------------------------------------------------------
+O objetivo é orientar o desenvolvimento do painel, definindo as principais perguntas de negócio, indicadores estratégicos (KPIs), visualizações, interações e decisões que poderão ser apoiadas pela solução analítica.
 
-# Página 1 --- Visão Executiva
+O dashboard foi concebido para atender gestores públicos, pesquisadores, profissionais de Business Intelligence, analistas de dados e tomadores de decisão interessados na evolução da educação brasileira entre **2015 e 2024**.
 
-## Objetivo
+---
 
-Fornecer um panorama nacional da educação brasileira.
+# 🎯 Objetivos Estratégicos
 
-## Pergunta principal
+O painel foi desenvolvido para:
 
-**O que está acontecendo com a educação brasileira entre 2019 e 2023?**
+- Consolidar indicadores educacionais em uma visão única.
+- Facilitar a exploração dos dados por diferentes níveis de ensino.
+- Apoiar a formulação de políticas públicas.
+- Identificar tendências educacionais ao longo do tempo.
+- Evidenciar desigualdades regionais.
+- Disponibilizar indicadores confiáveis para tomada de decisão baseada em dados.
 
-## Perguntas respondidas
+---
 
--   Quantos estudantes existem?
--   Como evoluíram as matrículas?
--   Como está distribuído o ensino?
--   Como está dividida a rede pública e privada?
--   Onde estão concentrados os estudantes?
--   Como está a infraestrutura?
--   Qual o percentual de estudantes com deficiência?
-
-## KPIs
-
--   Total de Estudantes
--   Ensino Fundamental
--   Ensino Médio
--   Ensino Superior
--   Crescimento do Período
--   Rede Pública
--   Rede Privada
--   Estudantes com Deficiência
-
-## Gráficos
-
--   Linha: Evolução das Matrículas
--   Colunas: Distribuição por Nível de Ensino
--   Rosca: Rede Pública × Privada
--   Mapa: Estudantes por Estado
--   Barras: Ranking dos Estados
--   Cartões: Infraestrutura (Internet, Biblioteca, Laboratórios e
-    Quadra)
-
-## Decisões apoiadas
-
--   Identificar tendências nacionais.
--   Detectar regiões prioritárias.
--   Direcionar análises detalhadas.
-
-------------------------------------------------------------------------
-
-# Página 2 --- Perfil Demográfico
+# 📄 Página 1 — Visão Executiva
 
 ## Objetivo
 
-Conhecer quem são os estudantes brasileiros.
+Apresentar uma visão consolidada da educação brasileira, permitindo compreender rapidamente a evolução dos principais indicadores do período.
 
 ## Pergunta principal
 
-**Quem são os estudantes brasileiros?**
+> **Como evoluiu a educação brasileira entre 2015 e 2024?**
 
 ## Perguntas respondidas
 
--   Como está distribuído o sexo?
--   Qual a faixa etária predominante?
--   Como está distribuída a raça/cor?
--   Qual a nacionalidade predominante?
--   Como essas características variam por nível de ensino?
+- Quantos estudantes existem no Brasil?
+- Como evoluíram as matrículas ao longo do período?
+- Como os estudantes estão distribuídos por nível de ensino?
+- Qual a participação das redes pública e privada?
+- Quais estados concentram o maior número de matrículas?
+- Como evoluiu a infraestrutura escolar?
+- Qual o percentual de estudantes com deficiência?
 
 ## KPIs
 
--   Homens
--   Mulheres
--   Idade Média
--   Estudantes com Deficiência
--   Nacionalidades
+- Total de Estudantes
+- Ensino Fundamental
+- Ensino Médio
+- Ensino Superior
+- Crescimento do Período
+- Participação da Rede Pública
+- Participação da Rede Privada
+- Estudantes com Deficiência
 
-## Gráficos
+## Visualizações
 
--   Barras: Sexo
--   Pirâmide Etária
--   Donut: Raça/Cor
--   Colunas: Faixa Etária
--   Mapa: Perfil por Estado
+- Linha — Evolução das Matrículas
+- Colunas — Distribuição por Nível de Ensino
+- Donut — Rede Pública × Privada
+- Mapa do Brasil
+- Ranking dos Estados
+- Cartões de Infraestrutura
 
 ## Decisões apoiadas
 
--   Identificar perfis predominantes.
--   Apoiar políticas de inclusão.
--   Comparar perfis regionais.
+- Identificação de tendências nacionais.
+- Definição de prioridades estratégicas.
+- Direcionamento das análises detalhadas.
 
-------------------------------------------------------------------------
+---
 
-# Página 3 --- Distribuição Geográfica
+# 📄 Página 2 — Perfil Demográfico
 
 ## Objetivo
 
-Analisar onde estão concentradas as matrículas.
+Analisar as características demográficas dos estudantes brasileiros.
 
 ## Pergunta principal
 
-**Onde estão os estudantes brasileiros?**
+> **Quem são os estudantes brasileiros?**
 
 ## Perguntas respondidas
 
--   Quais regiões possuem mais estudantes?
--   Quais estados concentram mais matrículas?
--   Quais municípios possuem maior participação?
+- Como está distribuído o sexo?
+- Qual a faixa etária predominante?
+- Como está distribuída a raça/cor?
+- Qual a nacionalidade predominante?
+- Como esses perfis variam por nível de ensino?
 
 ## KPIs
 
--   Total por Região
--   Total por Estado
--   Total por Município
+- Homens
+- Mulheres
+- Idade Média
+- Estudantes com Deficiência
+- Nacionalidades
 
-## Gráficos
+## Visualizações
 
--   Mapa do Brasil
--   Ranking dos Estados
--   Ranking dos Municípios
--   Linha: Evolução Regional
+- Barras — Sexo
+- Pirâmide Etária
+- Donut — Raça/Cor
+- Colunas — Faixa Etária
+- Mapa por Estado
 
 ## Decisões apoiadas
 
--   Planejamento regional.
--   Distribuição de recursos.
--   Comparações geográficas.
+- Identificação dos perfis predominantes.
+- Formulação de políticas de inclusão.
+- Comparação entre regiões.
 
-------------------------------------------------------------------------
+---
 
-# Página 4 --- Infraestrutura Escolar
+# 📄 Página 3 — Distribuição Geográfica
 
 ## Objetivo
 
-Avaliar as condições estruturais das escolas.
+Analisar a distribuição espacial das matrículas no território nacional.
 
 ## Pergunta principal
 
-**Como está a infraestrutura escolar brasileira?**
+> **Onde estão concentrados os estudantes brasileiros?**
 
 ## Perguntas respondidas
 
--   Qual o acesso à internet?
--   Quantas escolas possuem biblioteca?
--   Existem laboratórios?
--   Há quadras esportivas?
--   Como esses indicadores variam entre estados?
+- Quais regiões concentram mais estudantes?
+- Quais estados possuem maior número de matrículas?
+- Quais municípios apresentam maior participação?
+- Como ocorreu a evolução regional ao longo dos anos?
 
 ## KPIs
 
--   Internet
--   Biblioteca
--   Sala de Leitura
--   Laboratório de Informática
--   Laboratório de Ciências
--   Quadra
--   Água Potável
--   Energia Elétrica
+- Total por Região
+- Total por Estado
+- Total por Município
 
-## Gráficos
+## Visualizações
 
--   Barras Horizontais
--   Radar
--   Heatmap
--   Mapa Temático
+- Mapa Coroplético
+- Ranking dos Estados
+- Ranking dos Municípios
+- Linha Temporal Regional
 
 ## Decisões apoiadas
 
--   Priorizar investimentos.
--   Identificar desigualdades regionais.
+- Planejamento regional.
+- Distribuição de investimentos.
+- Comparações geográficas.
 
-------------------------------------------------------------------------
+---
 
-# Página 5 --- Inclusão e Acessibilidade
+# 📄 Página 4 — Infraestrutura Escolar
 
 ## Objetivo
 
-Analisar indicadores de inclusão.
+Avaliar a qualidade da infraestrutura das escolas brasileiras.
 
 ## Pergunta principal
 
-**Como está a inclusão dos estudantes brasileiros?**
+> **Como evoluiu a infraestrutura das escolas brasileiras?**
 
 ## Perguntas respondidas
 
--   Quantos estudantes possuem deficiência?
--   Como evoluiu esse indicador?
--   Como está o transporte escolar?
+- Qual o percentual de escolas com internet?
+- Quantas possuem biblioteca?
+- Quantas possuem laboratório?
+- Como está a infraestrutura por estado?
+- Houve evolução entre 2015 e 2024?
 
 ## KPIs
 
--   Estudantes com Deficiência
--   Transporte Escolar
--   Percentual de Inclusão
+- Internet
+- Biblioteca
+- Sala de Leitura
+- Laboratório de Informática
+- Laboratório de Ciências
+- Quadra Esportiva
+- Água Potável
+- Energia Elétrica
 
-## Gráficos
+## Visualizações
 
--   Linha Temporal
--   Barras
--   Mapa
--   Indicadores Percentuais
+- Barras Horizontais
+- Heatmap
+- Radar
+- Mapa Temático
 
 ## Decisões apoiadas
 
--   Planejamento de ações inclusivas.
--   Avaliação de políticas públicas.
+- Priorização de investimentos.
+- Redução das desigualdades regionais.
+- Planejamento da infraestrutura educacional.
 
-------------------------------------------------------------------------
+---
 
-# Página 6 --- Ensino Superior
+# 📄 Página 5 — Inclusão e Acessibilidade
 
 ## Objetivo
 
-Analisar os indicadores do Ensino Superior.
+Avaliar os indicadores relacionados à inclusão educacional.
 
 ## Pergunta principal
 
-**Como está estruturado o Ensino Superior brasileiro?**
+> **Como evoluíram os indicadores de inclusão entre 2015 e 2024?**
 
 ## Perguntas respondidas
 
--   Qual área do conhecimento possui mais matrículas?
--   Como está dividido o ensino presencial e EAD?
--   Como está o financiamento estudantil?
--   Como está a reserva de vagas?
+- Quantos estudantes possuem deficiência?
+- Como evoluiu esse indicador?
+- Como está distribuído o transporte escolar?
+- Quais regiões apresentam maior inclusão?
 
 ## KPIs
 
--   Matrículas
--   Financiamento
--   Reserva de Vagas
--   Apoio Social
--   Mobilidade Acadêmica
+- Estudantes com Deficiência
+- Transporte Escolar
+- Percentual de Inclusão
 
-## Gráficos
+## Visualizações
 
--   Treemap
--   Sunburst
--   Barras
--   Donut
--   Linha
+- Linha Temporal
+- Barras
+- Indicadores Percentuais
+- Mapa Temático
 
 ## Decisões apoiadas
 
--   Avaliar expansão do ensino superior.
--   Apoiar planejamento acadêmico.
+- Avaliação das políticas de inclusão.
+- Planejamento de ações governamentais.
+- Monitoramento dos indicadores sociais.
 
-------------------------------------------------------------------------
+---
 
-# Página 7 --- Comparativos
+# 📄 Página 6 — Ensino Superior
 
 ## Objetivo
 
-Comparar indicadores entre regiões, estados e anos.
+Analisar os principais indicadores relacionados ao Ensino Superior.
 
 ## Pergunta principal
 
-**Como diferentes recortes se comportam entre si?**
+> **Como evoluiu o Ensino Superior brasileiro?**
 
 ## Perguntas respondidas
 
--   Estado × Estado
--   Região × Região
--   Ano × Ano
--   Rede Pública × Privada
--   Ensino Fundamental × Médio × Superior
+- Quais áreas concentram mais estudantes?
+- Como está distribuído o ensino presencial e EAD?
+- Como evoluiu o financiamento estudantil?
+- Como está a reserva de vagas?
+- Como evoluíram os programas de apoio estudantil?
 
 ## KPIs
 
--   Diferença Absoluta
--   Diferença Percentual
--   Crescimento
+- Matrículas
+- Financiamento Estudantil
+- Reserva de Vagas
+- Apoio Social
+- Mobilidade Acadêmica
 
-## Gráficos
+## Visualizações
 
--   Barras Agrupadas
--   Linha Comparativa
--   Tabela Dinâmica
--   Dispersão
+- Treemap
+- Sunburst
+- Barras
+- Donut
+- Linha Temporal
 
 ## Decisões apoiadas
 
--   Benchmarking.
--   Comparações estratégicas.
+- Planejamento da expansão universitária.
+- Avaliação das políticas de acesso.
+- Monitoramento do Ensino Superior.
 
-------------------------------------------------------------------------
+---
 
-# Página 8 --- Insights Estratégicos
+# 📄 Página 7 — Comparativos
 
 ## Objetivo
 
-Destacar automaticamente os principais achados da análise.
+Permitir comparações entre diferentes dimensões da educação brasileira.
 
 ## Pergunta principal
 
-**Quais informações exigem atenção imediata?**
+> **Como os indicadores se comportam entre regiões, estados, anos e redes de ensino?**
 
 ## Perguntas respondidas
 
--   Qual estado mais cresceu?
--   Onde há maior deficiência de infraestrutura?
--   Qual região apresenta melhores indicadores?
--   Quais tendências foram observadas?
+- Estado × Estado
+- Região × Região
+- Ano × Ano
+- Rede Pública × Rede Privada
+- Ensino Fundamental × Médio × Superior
 
 ## KPIs
 
--   Top 5 Crescimentos
--   Top 5 Reduções
--   Melhor Infraestrutura
--   Maior Inclusão
+- Diferença Absoluta
+- Diferença Percentual
+- Crescimento Acumulado
 
-## Gráficos
+## Visualizações
 
--   Rankings
--   Cartões Inteligentes
--   Heatmap
--   Linha de Tendência
+- Barras Agrupadas
+- Linha Comparativa
+- Matriz
+- Dispersão
 
 ## Decisões apoiadas
 
--   Definição de prioridades.
--   Formulação de políticas públicas.
--   Comunicação executiva.
+- Benchmarking.
+- Comparações estratégicas.
+- Identificação de melhores práticas.
 
-------------------------------------------------------------------------
+---
 
-# Navegação
+# 📄 Página 8 — Insights Estratégicos
 
-Fluxo recomendado:
+## Objetivo
 
-1.  Visão Executiva
-2.  Perfil Demográfico
-3.  Distribuição Geográfica
-4.  Infraestrutura Escolar
-5.  Inclusão e Acessibilidade
-6.  Ensino Superior
-7.  Comparativos
-8.  Insights Estratégicos
+Destacar automaticamente os principais achados identificados durante a análise dos dados.
+
+## Pergunta principal
+
+> **Quais indicadores exigem maior atenção dos gestores?**
+
+## Perguntas respondidas
+
+- Quais estados apresentaram maior crescimento?
+- Onde estão as maiores deficiências de infraestrutura?
+- Quais regiões apresentam melhores indicadores?
+- Quais tendências foram observadas ao longo do período?
+- Quais indicadores merecem acompanhamento prioritário?
+
+## KPIs
+
+- Top 5 Crescimentos
+- Top 5 Reduções
+- Melhor Infraestrutura
+- Maior Inclusão
+- Maior Evolução das Matrículas
+
+## Visualizações
+
+- Rankings
+- Cartões Inteligentes
+- Heatmap
+- Linha de Tendência
+
+## Decisões apoiadas
+
+- Definição de prioridades estratégicas.
+- Formulação de políticas públicas.
+- Comunicação executiva.
+- Identificação de oportunidades de melhoria.
+
+---
+
+# 🔎 Filtros Globais
+
+O dashboard deverá disponibilizar filtros para todas as páginas, permitindo análises dinâmicas por diferentes perspectivas.
+
+## Filtros
+
+- Ano
+- Região
+- Estado
+- Município
+- Rede de Ensino
+- Etapa de Ensino
+- Sexo
+- Faixa Etária
+- Raça/Cor
+- Deficiência
+- Modalidade de Ensino
+
+---
+
+# 🧭 Navegação
+
+Fluxo recomendado de exploração do dashboard:
+
+1. Visão Executiva
+2. Perfil Demográfico
+3. Distribuição Geográfica
+4. Infraestrutura Escolar
+5. Inclusão e Acessibilidade
+6. Ensino Superior
+7. Comparativos
+8. Insights Estratégicos
+
+---
+
+# 🎯 Resultado Esperado
+
+Ao final da navegação, o usuário deverá compreender:
+
+- A evolução da educação brasileira entre **2015 e 2024**.
+- O perfil demográfico dos estudantes.
+- A distribuição geográfica das matrículas.
+- As diferenças entre redes pública e privada.
+- A evolução da infraestrutura escolar.
+- Os avanços em inclusão educacional.
+- O comportamento do Ensino Superior.
+- As principais tendências e oportunidades identificadas nos dados.
+
+O dashboard foi concebido para oferecer uma experiência analítica intuitiva, permitindo que gestores públicos, pesquisadores e profissionais de dados transformem informações dispersas em conhecimento estratégico para apoiar decisões fundamentadas em evidências.
