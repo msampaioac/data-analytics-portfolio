@@ -1,4 +1,4 @@
-# 🎓 Perfil dos Estudantes Brasileiros (2015–2024)
+# Perfil dos Estudantes Brasileiros (2015–2024)
 
 > Projeto de Engenharia de Dados e Análise de Dados desenvolvido utilizando SQL no Google BigQuery com dados públicos do INEP disponibilizados pela Base dos Dados.
 
@@ -11,7 +11,7 @@
 
 ---
 
-# 📖 Sobre o Projeto
+# Sobre o Projeto
 
 O Brasil disponibiliza um vasto volume de dados educacionais por meio do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP). Entretanto, essas informações encontram-se distribuídas em diferentes bases, níveis de ensino e estruturas de dados, dificultando análises integradas sobre o perfil dos estudantes brasileiros.
 
@@ -23,7 +23,7 @@ Além da construção da base analítica, o projeto demonstra boas práticas de 
 
 ---
 
-# 🎯 Objetivos
+# Objetivos
 
 - Integrar múltiplas bases públicas do INEP em uma única camada analítica.
 - Consolidar informações da Educação Básica e do Ensino Superior.
@@ -35,7 +35,7 @@ Além da construção da base analítica, o projeto demonstra boas práticas de 
 
 ---
 
-# 📊 Perguntas de Negócio
+# Perguntas de Negócio
 
 A solução permite responder perguntas como:
 
@@ -53,7 +53,7 @@ A solução permite responder perguntas como:
 
 ---
 
-# 🗂️ Fontes de Dados
+# Fontes de Dados
 
 Todas as informações utilizadas são provenientes de bases públicas oficiais.
 
@@ -83,7 +83,7 @@ Todas as informações utilizadas são provenientes de bases públicas oficiais.
 
 ---
 
-# 🏗️ Arquitetura da Solução
+# Arquitetura da Solução
 
 ```text
              Dados Públicos
@@ -106,7 +106,7 @@ Todas as informações utilizadas são provenientes de bases públicas oficiais.
 
 ---
 
-# 📚 Bases Integradas
+# Bases Integradas
 
 O projeto integra informações provenientes de diferentes bases públicas:
 
@@ -128,7 +128,7 @@ O projeto integra informações provenientes de diferentes bases públicas:
 
 ---
 
-# 🔍 Técnicas SQL Aplicadas
+# Técnicas SQL Aplicadas
 
 Durante o desenvolvimento foram utilizadas técnicas de SQL Analítico, incluindo:
 
@@ -153,7 +153,7 @@ Durante o desenvolvimento foram utilizadas técnicas de SQL Analítico, incluind
 
 ---
 
-# 📈 Indicadores Produzidos
+# Indicadores Produzidos
 
 Entre os principais indicadores gerados estão:
 
@@ -192,7 +192,7 @@ Entre os principais indicadores gerados estão:
 
 ---
 
-# 🤖 Uso da Inteligência Artificial
+# Uso da Inteligência Artificial
 
 Durante o desenvolvimento do projeto foi utilizada Inteligência Artificial exclusivamente como ferramenta de apoio técnico.
 
@@ -212,7 +212,7 @@ Todas as consultas SQL foram desenvolvidas, testadas e validadas manualmente no 
 
 ---
 
-# 📁 Estrutura do Projeto
+# Estrutura do Projeto
 
 ```text
 perfil-estudantes-brasileiros-2015-2024
@@ -246,7 +246,7 @@ perfil-estudantes-brasileiros-2015-2024
 
 ---
 
-# 🚀 Possíveis Aplicações
+# Possíveis Aplicações
 
 A base produzida pode ser utilizada em:
 
@@ -264,7 +264,7 @@ A base produzida pode ser utilizada em:
 
 ---
 
-# 💼 Competências Demonstradas
+# Competências Demonstradas
 
 Este projeto evidencia competências práticas nas seguintes áreas:
 
@@ -285,7 +285,7 @@ Este projeto evidencia competências práticas nas seguintes áreas:
 
 ---
 
-# 📖 Documentação
+# Documentação
 
 A documentação do projeto contempla:
 
@@ -300,7 +300,7 @@ A documentação do projeto contempla:
 
 ---
 
-# 👨‍💻 Autor
+# Autor
 
 **Marcelo dos Santos Sampaio**
 
@@ -311,7 +311,7 @@ Especialista em Business Intelligence | Data Analytics | Engenharia de Dados | G
 
 ---
 
-# ⭐ Considerações Finais
+# Considerações Finais
 
 Este projeto foi desenvolvido com o objetivo de demonstrar competências práticas em Engenharia de Dados, SQL Analítico e Business Intelligence utilizando dados públicos brasileiros disponibilizados pelo INEP por meio da plataforma Base dos Dados.
 
