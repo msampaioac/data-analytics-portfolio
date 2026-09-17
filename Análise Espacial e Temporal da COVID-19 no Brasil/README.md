@@ -1,4 +1,4 @@
-# 🇧🇷 COVID-19 Brasil Analytics
+# COVID-19 Brasil Analytics
 
 ### Engenharia de Dados, SQL Avançado, Google BigQuery e Business Intelligence
 
